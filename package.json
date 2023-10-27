@@ -1,0 +1,41 @@
+{
+  "name": "e-commerce-labs-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "start": "node dist/app.js",
+    "dev": "npm run build && nodemon dist/app.js",
+    "seed": "node seed.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.30.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0",
+    "fs-extra": "^10.1.0",
+    "google-auth-library": "^8.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "mercadopago": "^1.5.13",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.7.5",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.20.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/node": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@flydotio/dockerfile": "^0.3.3",
+    "nodemon": "^2.0.16"
+  }
+}
