@@ -9,7 +9,7 @@ const setHeaders = require('./utils/middlewares/setHeaders.js')
 const { conn } = require('./models/index.js')
 const app = express()
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 4000
 
 //aca vamos a setear nuestros headers
 app.use(cors())
@@ -19,7 +19,7 @@ app.use(morgan('dev'))
 app.use(setHeaders)
 
 axios.defaults.baseURL =
-  process.env.REACT_APP_API || 'http://localhost:3000'
+  process.env.REACT_APP_API || 'http://localhost:4000'
 
 //aca vamos a setear todas nuestras rutas
 app.use('/api', routes)

@@ -23,7 +23,7 @@ const sequelize =
         dialect: 'postgres'
       })
     : new Sequelize({
-        database: 'ecommerce',
+        database: 'e_commerce_labs',
         host: 'localhost',
         password: 'admin',
         username: 'postgres',
